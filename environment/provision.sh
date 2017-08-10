@@ -19,4 +19,8 @@ sudo apt-get install nginx -y
 
 sudo rm /etc/nginx/sites-available/default
 sudo cp ~/app/environment/templates/default /etc/nginx/sites-available/default
+
+sudo rm /etc/nginx/nginx.conf 
+sudo cp ~/app/environment/templates/nginx.conf /etc/nginx/nginx.conf
+
 sudo service nginx reload
